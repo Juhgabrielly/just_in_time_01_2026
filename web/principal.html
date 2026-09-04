@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema MDF - Principal</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Sistema MDF</h1>
+            <span>Controle de produção e estoque</span>
+        </div>
+        <div class="usuario-area">
+            <span>
+                Olá, <strong id="nomeUsuario"></strong>
+            </span>
+            <button id="btnSair">
+                Sair
+            </button>
+        </div>
+    </header>
+    <main>
+        <h2>Menu principal</h2>
+        <p class="descricao">
+            Selecione uma opção para continuar.
+        </p>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Produtos</h3>
+                <p>Cadastre, consulte, edite e exclua produtos do sistema. </p>
+                <button onclick="abrirProdutos()">
+                    Gerenciar produtos
+                </button>
+            </div>
+            <div class="card">
+                <h3>Produção e estoque</h3>
+                <p> Registre produtos fabricados e pedidos, controlando o estoque.</p>
+                <button onclick="abrirProducao()">
+                    Acessar produção
+                </button>
+            </div>
+            <div class="card">
+                <h3>Movimentações</h3>
+                <p>Consulte o histórico das movimentações realizadas no estoque. </p>
+                <button onclick="abrirMovimentacoes()">
+                    Ver movimentações
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="principal.js"></script>
+</body>
+</html>
